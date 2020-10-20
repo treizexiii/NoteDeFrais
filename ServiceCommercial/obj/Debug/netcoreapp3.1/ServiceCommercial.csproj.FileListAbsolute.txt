@@ -1,0 +1,13 @@
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.exe
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.deps.json
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.runtimeconfig.json
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.runtimeconfig.dev.json
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.dll
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.pdb
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.csprojAssemblyReference.cache
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.AssemblyInfoInputs.cache
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.AssemblyInfo.cs
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.csproj.CoreCompileInputs.cache
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.dll
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.pdb
+C:\Users\darkt\source\repos\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.genruntimeconfig.cache
