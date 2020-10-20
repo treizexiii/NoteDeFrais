@@ -1,64 +1,51 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ServiceCommercial
 {
     public class Commercial
     {
-        private string firstName, lastName;
-        private int age, powerCar;
-        private char cat;
-        private List<NoteDeFrais> myList;
+        public List<NoteDeFrais> NotesDeFrais { get; set; }
 
-        public List<NoteDeFrais> MyList
-        {
-            get { return myList; }
-            set { myList = value; }
-        }
+        public string FirstName { get; set; }
 
-        public string FirstName
-        {
-            get { return firstName; }
-        }
-        public string LastName
-        {
-            get { return lastName; }
-        }
-        public int Age
-        {
-            get { return age; }
-            set { age = value; }
-        }
-        public int PowerCar
-        {
-            get { return powerCar; }
-            set { powerCar = value; }
-        }
-        public char Cat
-        {
-            get { return cat; }
-            set { cat = value; }
-        }
+        public string LastName { get; set; }
+
+        public int Age { get; set; }
+
+        public int PowerCar { get; set; }
+        public char Cat { get; set; }
 
         public Commercial(string fn, string ln, int a, int p, char c)
         {
-            this.firstName = fn;
-            this.lastName = ln;
-            this.age = a;
-            this.powerCar = p;
-            this.cat = c;
-            this.myList = new List<NoteDeFrais>();
+            FirstName = fn;
+            FirstName = ln;
+            Age = a;
+            PowerCar = p;
+            Cat = c;
+            NotesDeFrais = new List<NoteDeFrais>();
         }
         public void addNote(NoteDeFrais n)
         {
-            this.myList.Add(n);
+            NotesDeFrais.Add(n);
+        }
+
+        public decimal CumulAmount(int year)
+        {
+            decimal totalAmount = 0;
+
+            foreach (var noteDeFrais in NotesDeFrais)
+            {
+                if (noteDeFrais.Date.Year == year)
+                {
+                    totalAmount += noteDeFrais.Amount;
+                }
+            }
+            return totalAmount;
         }
 
         public override string ToString()
         {
-            return $"Nom : {lastName} \nPrénom : {firstName} \nPuissance de voiture {powerCar} \nCatégorie : {cat}";
+            return $"Nom : {LastName} \nPrénom : {FirstName} \nPuissance de voiture {PowerCar} \nCatégorie : {Cat}";
         }
     }
 }

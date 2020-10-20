@@ -1,45 +1,37 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ServiceCommercial
 {
     public class TravelBill : NoteDeFrais
     {
-        private int kilometers;
+        public int Kilometers { get; set; }
 
-        private int Km
+        public TravelBill(DateTime d, Commercial c, int k) : base(d, c)
         {
-            get { return this.kilometers; }
-            set { this.kilometers = value; }
+            Kilometers = k;
         }
 
-        public TravelBill(DateTime d, Commercial c, int k) : base(d,c)
+        public override decimal CalculAmount()
         {
-            this.kilometers = k;
-        }
-
-        public override double CalculAmount()
-        {
-            double result;
-            if(base.Commercial.PowerCar > 10)
+            decimal result;
+            if (Commercial.PowerCar > 10)
             {
-                result = this.kilometers * 0.3;
+                result = (decimal)(Kilometers * 0.3);
             }
-            else if(base.Commercial.PowerCar >=5 && base.Commercial.PowerCar<=10)
+            else if (Commercial.PowerCar >= 5 && Commercial.PowerCar <= 10)
             {
-                result = this.kilometers * 0.2;
+                result = (decimal)(Kilometers * 0.2);
             }
             else
             {
-                result = this.kilometers * 0.1;
+                result = (decimal)(Kilometers * 0.1);
             }
             return result;
         }
 
         public override string ToString()
         {
-            return $"Date : {base.Date.ToShortDateString()} \nMontant à rembourser : {base.Amout} \nCommercial : {base.Commercial.LastName}";
+            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nCommercial : {Commercial.LastName}";
         }
     }
 }

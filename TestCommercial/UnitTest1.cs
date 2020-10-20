@@ -15,7 +15,7 @@ namespace TestCommercial
             NoteDeFrais f, f1;
             f = new NoteDeFrais(new DateTime(2020, 10, 19), c);
             f1 = new NoteDeFrais(new DateTime(2020, 10, 18), c);
-            Assert.AreEqual(2, c.MyList.Count);
+            Assert.AreEqual(2, c.NotesDeFrais.Count);
         }
 
         [TestMethod]
@@ -56,8 +56,18 @@ namespace TestCommercial
             Commercial c;
             c = new Commercial("Armand", "RAVE", 32, 8, 'B');
             NoteDeFrais f;
-            f = new LunchBill(new DateTime(2020, 10, 19), c, 35);
-            Assert.AreEqual(22, f.CalculAmount());
+            f = new LunchBill(new DateTime(2020, 10, 19), c, 15);
+            Assert.AreEqual(15,f.CalculAmount());
+        }
+
+        [TestMethod]
+        public void CalculAmountHotelTest()
+        {
+            Commercial c;
+            c = new Commercial("Armand", "RAVE", 32, 8, 'A');
+            NoteDeFrais f;
+            f = new HotelBill(new DateTime(2020, 10, 19), c, 3, 80);
+            Assert.AreEqual((decimal)74.75, f.CalculAmount());
         }
     }
 }

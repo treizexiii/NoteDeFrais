@@ -1,66 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ServiceCommercial
 {
     public class NoteDeFrais
     {
-        private DateTime date;
-        private double amount;
-        private bool checkNote = false;
-        private Commercial commercial;
-        private int numAmount;
+        public decimal Amount { get; set; }
 
-        public double Amout
-        {
-            get { return this.amount; }
-            set { this.amount = value; }
-        }
-        public bool Checknote
-        {
-            get { return this.checkNote; }
-            set { this.checkNote = value; }
-        }
-        public Commercial Commercial
-        {
-            get { return this.commercial; }
-            set { this.commercial = value; }
-        }
-        public DateTime Date
-        {
-            get { return this.date; }
-        }
+        public bool CheckNote { get; set; }
+
+        public Commercial Commercial { get; set; }
+
+        public DateTime Date { get; set; }
 
         public NoteDeFrais(DateTime d, Commercial c)
         {
-            this.date = d;
-            this.commercial = c;
+            Date = d;
+            Commercial = c;
             c.addNote(this);
+            CheckNote = false;
         }
 
         public void SetAmount()
         {
-            this.amount = CalculAmount();
+            Amount = CalculAmount();
         }
 
-        virtual public double CalculAmount()
+        virtual public decimal CalculAmount()
         {
             return 0;
         }
 
         public bool SetCheck()
         {
-            if(this.amount==0)
+            if (Amount == 0)
             {
-                this.checkNote = true;
+                CheckNote = true;
             }
-            return checkNote;
+            return CheckNote;
         }
 
         public override string ToString()
         {
-            return $"Date : {date.ToShortDateString()} \nMontant à rembourser : {amount} \nStatus : {checkNote.ToString()} \nCommercial : {commercial.LastName}";
+            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nStatus : {CheckNote.ToString()} \nCommercial : {Commercial.LastName}";
         }
     }
 }

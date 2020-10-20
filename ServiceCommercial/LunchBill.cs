@@ -1,47 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ServiceCommercial
 {
     public class LunchBill : NoteDeFrais
     {
-        private double bill;
+        public decimal Bill { get; set; }
 
-        public double Bill
+        public LunchBill(DateTime d, Commercial c, decimal b) : base(d, c)
         {
-            get { return bill; }
-            set { bill = value; }
+            this.Bill = b;
         }
 
-        public LunchBill(DateTime d, Commercial c, double b) : base(d,c)
+        public override decimal CalculAmount()
         {
-            b = this.bill;
-        }
-
-        public override double CalculAmount()
-        {
-            double result;
-
-            if (base.Commercial.Cat=='A')
+            decimal result = 0;
+            switch (base.Commercial.Cat)
             {
-                result = 25;
+                case 'A':
+                    result = 25;
+                    break;
+                case 'B':
+                    result = 22;
+                    break;
+                case 'C':
+                    result = 20;
+                    break;
             }
-            else if(base.Commercial.Cat=='B')
+            if (result > this.Bill)
             {
-                result = 22;
+                result = this.Bill;
             }
-            else if(base.Commercial.Cat=='C')
-            {
-                result = 20;
-            }
-
             return result;
         }
 
         public override string ToString()
         {
-            return $"Date : {base.Date.ToShortDateString()} \nMontant à rembourser : {this.bill} \nCommercial : {base.Commercial.LastName}";
+            return $"Date : {base.Date.ToShortDateString()} \nMontant à rembourser : {this.Bill} \nCommercial : {base.Commercial.LastName}";
         }
     }
 }

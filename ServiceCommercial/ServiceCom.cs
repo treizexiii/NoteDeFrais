@@ -1,38 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace ServiceCommercial
 {
     public class ServiceCom
     {
-        private List<Commercial> effectifsService;
-
-        protected int numAmountUncheck;
-
-        public List<Commercial> EffectifsService
-        {
-            get { return effectifsService; }
-            set { effectifsService = value; }
-        }
+        public List<Commercial> EffectifsService { get; set; }
 
         public ServiceCom()
         {
-            this.effectifsService = new List<Commercial>();
+            EffectifsService = new List<Commercial>();
         }
 
         public void AddNewCormmercial(Commercial c)
         {
-            effectifsService.Add(c);
+            EffectifsService.Add(c);
         }
 
         public double AmountUncheck()
         {
-            foreach(Commercial c in effectifsService)
+            int numAmountUncheck=0;
+            foreach (Commercial c in EffectifsService)
             {
-                foreach(NoteDeFrais n in c.MyList)
+                foreach (NoteDeFrais n in c.NotesDeFrais)
                 {
-                    if(n.Checknote != true)
+                    if (n.CheckNote != true)
                     {
                         numAmountUncheck += 1;
                     }
