@@ -17,7 +17,6 @@ C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceComm
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.runtimeconfig.dev.json
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.dll
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\bin\Debug\netcoreapp3.1\ServiceCommercial.pdb
-C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.csprojAssemblyReference.cache
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.AssemblyInfoInputs.cache
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.AssemblyInfo.cs
 C:\Users\darkt\OneDrive\Cours developpement\Projet\ServiceCommercial\ServiceCommercial\obj\Debug\netcoreapp3.1\ServiceCommercial.csproj.CoreCompileInputs.cache

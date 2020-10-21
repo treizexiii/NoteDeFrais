@@ -11,6 +11,7 @@ namespace ServiceCommercial
         {
             Region = r;
             Bill = b;
+            Amount = CalculAmount();
         }
 
         public override decimal CalculAmount()
@@ -45,7 +46,7 @@ namespace ServiceCommercial
 
         public override string ToString()
         {
-            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Bill} \nCommercial : {Commercial.LastName}";
+            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nCommercial : {Commercial.LastName}";
         }
     }
 }

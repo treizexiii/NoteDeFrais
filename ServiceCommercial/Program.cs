@@ -6,11 +6,17 @@ namespace ServiceCommercial
     {
         static void Main(string[] args)
         {
-            Commercial c;
-            c = new Commercial("Armand", "RAVE", 32, 8, 'B');
-            NoteDeFrais f;
-            f = new LunchBill(new DateTime(2020, 10, 22), c, 35);
-            Console.WriteLine(f.CalculAmount());
+            ServiceCom sc;
+            Commercial c1;
+            sc = new ServiceCom();
+            c1 = new Commercial("Dupond", "Jean", 35, 7, 'B');
+            sc.AddNewCormmercial(c1);
+            sc.AddNoteService(c1, new DateTime(2013, 11, 15), 100);
+            sc.AddNote(c1, new DateTime(2013, 11, 21), (decimal)15.5);
+            sc.AddNote(c1, new DateTime(2013, 11, 25), 105, 2);
+            sc.AmountUncheck();
+            c1.CumulAmount(2013);
+            Console.ReadKey();
         }
 
 

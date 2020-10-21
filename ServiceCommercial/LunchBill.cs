@@ -8,7 +8,8 @@ namespace ServiceCommercial
 
         public LunchBill(DateTime d, Commercial c, decimal b) : base(d, c)
         {
-            this.Bill = b;
+            Bill = b;
+            Amount = CalculAmount();
         }
 
         public override decimal CalculAmount()
@@ -26,16 +27,16 @@ namespace ServiceCommercial
                     result = 20;
                     break;
             }
-            if (result > this.Bill)
+            if (result > Bill)
             {
-                result = this.Bill;
+                result = Bill;
             }
             return result;
         }
 
         public override string ToString()
         {
-            return $"Date : {base.Date.ToShortDateString()} \nMontant à rembourser : {this.Bill} \nCommercial : {base.Commercial.LastName}";
+            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nCommercial : {Commercial.LastName}";
         }
     }
 }

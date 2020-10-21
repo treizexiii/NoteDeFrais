@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ServiceCommercial
 {
@@ -14,6 +15,21 @@ namespace ServiceCommercial
         public void AddNewCormmercial(Commercial c)
         {
             EffectifsService.Add(c);
+        }
+
+        public void AddNoteService(Commercial c, DateTime d, int k)
+        {
+            TravelBill n = new TravelBill(d, c, k);
+        }
+
+        public void AddNote(Commercial c, DateTime d, decimal b)
+        {
+            NoteDeFrais n = new LunchBill(d, c, b);
+        }
+
+        public void AddNote(Commercial c, DateTime d, decimal b, int r)
+        {
+            NoteDeFrais n = new HotelBill(d, c, r, b);
         }
 
         public double AmountUncheck()

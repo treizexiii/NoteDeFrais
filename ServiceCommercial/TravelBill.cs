@@ -9,6 +9,7 @@ namespace ServiceCommercial
         public TravelBill(DateTime d, Commercial c, int k) : base(d, c)
         {
             Kilometers = k;
+            Amount = CalculAmount();
         }
 
         public override decimal CalculAmount()

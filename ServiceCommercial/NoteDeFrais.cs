@@ -4,25 +4,17 @@ namespace ServiceCommercial
 {
     public class NoteDeFrais
     {
-        public decimal Amount { get; set; }
-
         public bool CheckNote { get; set; }
-
         public Commercial Commercial { get; set; }
-
         public DateTime Date { get; set; }
+        public decimal Amount { get; set; }
 
         public NoteDeFrais(DateTime d, Commercial c)
         {
             Date = d;
             Commercial = c;
-            c.addNote(this);
+            c.addNoteCommercial(this);
             CheckNote = false;
-        }
-
-        public void SetAmount()
-        {
-            Amount = CalculAmount();
         }
 
         virtual public decimal CalculAmount()

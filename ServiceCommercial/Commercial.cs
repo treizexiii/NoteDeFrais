@@ -5,26 +5,23 @@ namespace ServiceCommercial
     public class Commercial
     {
         public List<NoteDeFrais> NotesDeFrais { get; set; }
-
         public string FirstName { get; set; }
-
         public string LastName { get; set; }
-
         public int Age { get; set; }
-
         public int PowerCar { get; set; }
         public char Cat { get; set; }
 
         public Commercial(string fn, string ln, int a, int p, char c)
         {
             FirstName = fn;
-            FirstName = ln;
+            LastName = ln;
             Age = a;
             PowerCar = p;
             Cat = c;
             NotesDeFrais = new List<NoteDeFrais>();
         }
-        public void addNote(NoteDeFrais n)
+
+        public void addNoteCommercial(NoteDeFrais n)
         {
             NotesDeFrais.Add(n);
         }
