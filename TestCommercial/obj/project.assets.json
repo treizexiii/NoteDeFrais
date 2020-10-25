@@ -5737,11 +5737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\TestCommercial\\TestCommercial.csproj",
+      "projectUniqueName": "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\TestCommercial\\TestCommercial.csproj",
       "projectName": "TestCommercial",
-      "projectPath": "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\TestCommercial\\TestCommercial.csproj",
+      "projectPath": "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\TestCommercial\\TestCommercial.csproj",
       "packagesPath": "C:\\Users\\darkt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\TestCommercial\\obj\\",
+      "outputPath": "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\TestCommercial\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\darkt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5757,8 +5757,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\ServiceCommercial\\ServiceCommercial.csproj": {
-              "projectPath": "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\ServiceCommercial\\ServiceCommercial.csproj"
+            "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\ServiceCommercial\\ServiceCommercial.csproj": {
+              "projectPath": "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\ServiceCommercial\\ServiceCommercial.csproj"
             }
           }
         }

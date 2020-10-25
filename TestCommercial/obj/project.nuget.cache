@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lvu5cicDYy83xeqmtuVvXyqbxx6eW97Vmf8L0s+S6NsUcANYgFHAO8dQTggZNoOdcwHg8xrngmDWFZVOOWWQmQ==",
+  "dgSpecHash": "w3/sXuetIsogu/pcZj+8+bwyazkUDq6xC/phfg6IlSX4ZIle9vHgV4ggOt5JW8SgW4TDwVLfak+7b97fS9B1Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\darkt\\OneDrive\\Cours developpement\\Projet\\ServiceCommercial\\TestCommercial\\TestCommercial.csproj",
+  "projectFilePath": "C:\\Users\\darkt\\Desktop\\NoteDeFrais\\TestCommercial\\TestCommercial.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\darkt\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\darkt\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

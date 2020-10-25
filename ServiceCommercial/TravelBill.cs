@@ -2,6 +2,7 @@
 
 namespace ServiceCommercial
 {
+    [Serializable]
     public class TravelBill : NoteDeFrais
     {
         public int Kilometers { get; set; }
@@ -32,7 +33,7 @@ namespace ServiceCommercial
 
         public override string ToString()
         {
-            return $"Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nCommercial : {Commercial.LastName}";
+            return $"ID : {IDNote} Date : {Date.ToShortDateString()} \nMontant à rembourser : {Amount} \nCommercial : {Commercial.LastName}";
         }
     }
 }

@@ -2,6 +2,7 @@
 
 namespace ServiceCommercial
 {
+    [Serializable]
     public class LunchBill : NoteDeFrais
     {
         public decimal Bill { get; set; }

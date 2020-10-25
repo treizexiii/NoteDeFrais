@@ -2,6 +2,7 @@
 
 namespace ServiceCommercial
 {
+    [Serializable]
     public class HotelBill : NoteDeFrais
     {
         public int Region { get; set; }

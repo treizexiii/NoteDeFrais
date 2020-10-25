@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 
 namespace ServiceCommercial
-{
+{   
+    [Serializable]
     public class ServiceCom
     {
         public List<Commercial> EffectifsService { get; set; }
+        public int IdService { get; set; }
 
-        public ServiceCom()
+        public ServiceCom(Service s)
         {
             EffectifsService = new List<Commercial>();
+            s.AddNewService(this);
         }
 
         public void AddNewCormmercial(Commercial c)
         {
             EffectifsService.Add(c);
+            c.IDCommercial = int.Parse(IdService.ToString() + EffectifsService.Count.ToString());
         }
 
         public void AddNoteService(Commercial c, DateTime d, int k)
@@ -37,7 +41,7 @@ namespace ServiceCommercial
             int numAmountUncheck=0;
             foreach (Commercial c in EffectifsService)
             {
-                foreach (NoteDeFrais n in c.NotesDeFrais)
+                foreach (NoteDeFrais n in c.ListNotes)
                 {
                     if (n.CheckNote != true)
                     {

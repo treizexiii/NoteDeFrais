@@ -2,12 +2,14 @@
 
 namespace ServiceCommercial
 {
+    [Serializable]
     public class NoteDeFrais
     {
         public bool CheckNote { get; set; }
         public Commercial Commercial { get; set; }
         public DateTime Date { get; set; }
         public decimal Amount { get; set; }
+        public int IDNote { get; set; }
 
         public NoteDeFrais(DateTime d, Commercial c)
         {
